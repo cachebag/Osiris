@@ -26,8 +26,8 @@
 #include <Hooks/Hooks.h>
 #include <Hooks/PeepEventsHook.h>
 #include <GameClient/Hud/BombStatus/BombStatusPanelManager.h>
-#include <GameClient/Hud/BombStatus/BombStatusPanelManagerContext.h>
 #include <GameClient/Hud/BombStatus/BombStatusPanelState.h>
+#include <GameMemoryValidation/GameMemoryValidatorState.h>
 #include <MemorySearch/PatternFinder.h>
 #include <MemorySearch/PatternSearchResults.h>
 #include <UI/Panorama/PanoramaGUI.h>
@@ -77,4 +77,5 @@ struct FullGlobalContext {
     WeaponModelGlowPreviewState weaponModelGlowPreviewState;
     InWorldPanelsPerHookState inWorldPanelsPerHookState;
     PlayerInfoPanelCachePerHookState playerInfoPanelCachePerHookState;
+    GameMemoryValidatorState gameMemoryValidatorState;
 };
